@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container box">
+      <div class="row today">
+        <div class="col-6 toptext">
+          <input type="text" id="textInput" />
+          <button
+            type="button"
+            class="btn btn-success button"
+            id="serchBtn"
+          >
+            Appaly
+          </button>
+          <h3 class="sunday"></h3>
+          <h1 id="country">Oslo</h1>
+          <p>Weathertoday</p>
+          <p>
+            <span id="degreas"> 0°</span>
+            <a id="c" href="#">C</a>|
+            <a id="f" href="#">F</a>
+          </p>
+          <p class="emoji-today">🌤</p>
+        </div>
+
+        <div class="col-3 nextday">
+          <h3 class="sunday">Monday</h3>
+          <h5>The weather tomorrow</h5>
+          <p>0°</p>
+          <p class="emoji-nextday">🌧</p>
+        </div>
+      </div>
+
+      <div class="row week">
+        <div class="col-12 rest-week">
+          <h3>The rest of the week</h3>
+        </div>
+
+        <div class="col-2">
+          <p>Mon</p>
+          <p>1° <span class="emoji-week">🌦</span></p>
+        </div>
+        <div class="col-2">
+          <p>Tus</p>
+          <p>2° <span class="emoji-week">🌦</span></p>
+        </div>
+        <div class="col-2">
+          <p>Wed</p>
+          <p>3° <span class="emoji-week">🌦</span></p>
+        </div>
+        <div class="col-2">
+          <p>Fri</p>
+          <p>4°<span class="emoji-week">🌦</span></p>
+        </div>
+        <div class="col-2">
+          <p>Sat</p>
+          <p>5° <span class="emoji-week">🌦</span></p>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
